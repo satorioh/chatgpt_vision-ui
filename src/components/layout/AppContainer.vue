@@ -1,7 +1,7 @@
 <template>
   <div class="common-layout h-full">
     <el-container class="h-full">
-      <el-aside width="200px">
+      <el-aside width="auto">
         <slot name="sidebar"></slot>
       </el-aside>
       <el-container>
