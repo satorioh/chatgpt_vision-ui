@@ -11,7 +11,7 @@
       <template #title
         ><el-icon><Picture /></el-icon><span>图片处理</span></template
       >
-      <el-menu-item index="ocr">OCR识别</el-menu-item>
+      <el-menu-item index="ocr"><router-link to="/image/ocr">OCR识别</router-link></el-menu-item>
     </el-sub-menu>
   </el-menu>
 </template>
