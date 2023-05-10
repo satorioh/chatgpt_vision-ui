@@ -1,7 +1,7 @@
 <template>
   <div>
-    <el-button :icon="isSidebarCollapse ? Expand : Fold" @click="toggleCollapse" />
-    <span>导航栏</span>
+<!--    <el-button :icon="isSidebarCollapse ? Expand : Fold" @click="toggleCollapse" />-->
+<!--    <span>导航栏</span>-->
   </div>
 </template>
 

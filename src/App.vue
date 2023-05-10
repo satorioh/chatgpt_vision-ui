@@ -1,8 +1,8 @@
 <template>
   <AppContainer>
-    <template #sidebar>
-      <Sidebar />
-    </template>
+<!--    <template #sidebar>-->
+<!--      <Sidebar />-->
+<!--    </template>-->
     <template #header>
       <Header />
     </template>
