@@ -5,14 +5,22 @@
       <el-input v-model="inputValue" :rows="3" type="textarea" placeholder="请输入您想咨询的问题" />
     </div>
     <div class="btn-wrap">
-      <el-button type="primary">发送</el-button>
+      <el-button type="primary" @click="onClick">发送</el-button>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
+import { getAnswer } from "@/api";
+
 const inputValue = ref("");
+
+const onClick = async () => {
+  console.log("onClick");
+  const res = await getAnswer({ query: inputValue.value });
+  console.log(res);
+};
 </script>
 
 <style lang="scss" scoped>
