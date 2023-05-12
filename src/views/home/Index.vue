@@ -11,7 +11,7 @@
     </div>
     <div class="answer-wrap">
       <div class="font-normal">{{ loadingHint }}</div>
-      <el-input v-model="answerText" :rows="5" type="textarea" />
+      <el-input v-model="answerText" :rows="5" type="textarea" :autosize="{ minRows: 5 }" />
     </div>
   </div>
 </template>
@@ -39,6 +39,7 @@ const changeAnswerText = (text: string) => {
 const onClick = async () => {
   try {
     showLoading(true);
+    changeAnswerText("");
     const res = await getAnswer({ query: inputValue.value });
     console.log(res);
     changeAnswerText(res.data.answer);
