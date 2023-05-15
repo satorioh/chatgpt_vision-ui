@@ -11,5 +11,9 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
       "@/components": fileURLToPath(new URL("./src/components", import.meta.url))
     }
+  },
+  server: {
+    port: 6006,
+    host: true
   }
 });
