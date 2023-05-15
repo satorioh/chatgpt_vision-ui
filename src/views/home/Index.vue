@@ -1,6 +1,6 @@
 <template>
   <div class="home-container">
-    <div class="title">测试</div>
+    <div class="title">AI 法律问答(测试版)</div>
     <div class="textarea-wrap">
       <el-input v-model="inputValue" :rows="5" type="textarea" placeholder="请输入您想咨询的问题" />
     </div>
