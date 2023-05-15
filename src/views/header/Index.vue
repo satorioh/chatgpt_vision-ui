@@ -7,7 +7,6 @@
 
 <script setup lang="ts">
 import { storeToRefs } from "pinia";
-import { Expand, Fold } from "@element-plus/icons-vue";
 import { useAppStore } from "@/stores/app";
 
 const appStore = useAppStore();

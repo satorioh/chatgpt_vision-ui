@@ -7,18 +7,12 @@
     @close="handleClose"
   >
     <el-menu-item index="0">LOGO</el-menu-item>
-    <el-sub-menu index="image">
-      <template #title
-        ><el-icon><Picture /></el-icon><span>图片处理</span></template
-      >
-      <el-menu-item index="ocr"><router-link to="/image/ocr">OCR识别</router-link></el-menu-item>
-    </el-sub-menu>
+    <el-sub-menu index="image"> </el-sub-menu>
   </el-menu>
 </template>
 
 <script setup lang="ts">
 import { useAppStore } from "@/stores/app";
-import { Picture } from "@element-plus/icons-vue";
 
 const appStore = useAppStore();
 const handleOpen = (key: string, keyPath: string[]) => {
